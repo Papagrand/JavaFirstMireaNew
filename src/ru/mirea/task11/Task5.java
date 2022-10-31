@@ -6,7 +6,6 @@ public class Task5 {
     public static void main(String[] args){
         var linked = new LinkedList<Integer>();
         var array = new ArrayList<Integer>();
-
         System.out.println("Добавление в конец");
         long start=System.currentTimeMillis();
         for (int i = 0; i < 1000000; i++){
