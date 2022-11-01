@@ -4,7 +4,6 @@ import javax.swing.*;
 
 public class Calculator {
     private JFrame window;
-
     public Calculator(){
         window = new JFrame("Calculator");
         window.setSize(260,350);

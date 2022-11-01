@@ -42,6 +42,7 @@ public class Pop_UpWindow {
         f.setLayout(null);
         f.setSize(350,350);
         f.setVisible(true);
+
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String data = "Country Selected: " + cb.getItemAt(cb.getSelectedIndex());

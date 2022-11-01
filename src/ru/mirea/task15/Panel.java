@@ -92,6 +92,7 @@ public class Panel extends JPanel {
             temp=removeLastChar(temp);
             output.setText(temp);
         };
+
         ActionListener equ = (ActionEvent e)->{
             if(previosComm=="+"){
                 String temp=output.getText();
