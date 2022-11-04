@@ -7,23 +7,23 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введитк ФИО и ИНН >> ");
         String last, firts, middleName;
-        String TIN;
+        String INN;
         last = scanner.next();
         firts = scanner.next();
         middleName = scanner.next();
 
         try {
-            TIN = scanner.next();
-            if (!checkTIN(TIN)) throw new TIN_Exeption("Ошибка ввода ИНН");
+            INN = scanner.next();
+            if (!checkTIN(INN)) throw new INN_Exeption("Ошибка ввода ИНН");
             System.out.println("Все в порядке");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 
-    public static boolean checkTIN(String TIN){
-        for (int i = 0; i < TIN.length(); i++){
-            if (TIN.charAt(i) < '0' || TIN.charAt(i) > '9'){
+    public static boolean checkTIN(String INN){
+        for (int i = 0; i < INN.length(); i++){
+            if (!Character.isDigit(INN.charAt(i))){
                 return false;
             }
         }
@@ -31,8 +31,8 @@ public class Task1 {
     }
 }
 
-class TIN_Exeption extends Exception{
-    public TIN_Exeption(String message){
+class INN_Exeption extends Exception{
+    public INN_Exeption(String message){
         super(message);
     }
 }
