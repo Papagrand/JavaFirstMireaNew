@@ -29,7 +29,7 @@ public class RestaurantTester {
         System.out.println("\n" + "Заказ через Интернет: ");
         Order internetOrder = new InternetOrder();
         internetOrder.add(new Dish(500, "Том-ям", "Острый"));
-        internetOrder.add(new Drink(160, "Ско", "Апельсиновый"));
+        internetOrder.add(new Drink(160, "Сок", "Апельсиновый"));
         String address = "Ленина 14, 11";
 
         try {
